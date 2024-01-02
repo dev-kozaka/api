@@ -1,8 +1,6 @@
 FROM ruby:3.1
 
 RUN mkdir /app
-ENV LANG=C.UTF-8 \
-    TZ=Asia/Tokyo
 WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
